@@ -1,0 +1,62 @@
+.navbg {
+  margin: 0;
+}
+nav {
+  background-color: #5d88b2;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+li {
+  text-decoration: none;
+}
+.navbg li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+h2 {
+  flex: 1;
+  margin: 0;
+  font-size: 2rem;
+  justify-content: center;
+  position: relative;
+  left: 50px;
+}
+
+.navbg li a::after {
+  content: ""; /* Creates an empty pseudo-element */
+  position: absolute;
+  width: 0; /* Initially no width (hidden) */
+  height: 2px; /* Thickness of the underline */
+  bottom: 0; /* Positioned at the bottom of the link */
+  left: 0; /* Starts at the left edge */
+  background-color: white; /* Color of the underline */
+  transition: width 0.5s ease-in-out; /* Smooth animation of the underline */
+}
+
+.navbg li a:hover::after {
+  width: 100%; /* On hover, underline expands to full width */
+}
+
+.navbg li a:hover {
+  color: rgb(204, 183, 63); /* Ensures text color stays white on hover */
+}

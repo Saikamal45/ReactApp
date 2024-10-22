@@ -1,0 +1,26 @@
+h1{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: rgb(142, 122, 12);
+}
+p{
+    font-size: 1.3rem;
+    font-family: 'Source Code Pro',monospace;
+}
+span{
+    font-weight: bold;
+}
+.outerContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+img{
+    width: 50%;
+    height: 50vh;
+    border-radius: 5PX;
+    position:relative;
+    top:50px;
+}
