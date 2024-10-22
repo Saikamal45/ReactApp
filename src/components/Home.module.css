@@ -58,3 +58,27 @@ button{
 button:hover{
     background-color: #3a2977;
 }
+
+@media (max-width:480px){
+    .text {
+        max-width: 100%; /* Make text take full width on mobile */
+        margin-bottom: 20px;
+      }
+    
+      img {
+        max-width: 100%; /* Make image take full width on mobile */
+      }
+    .para1, .para2, .para3 {
+        font-size: 2rem; /* Reduce text size for smaller screens */
+      }
+      .lor {
+        font-size: 1.2rem; /* Adjust description text size */
+      }
+      button{
+       width:100%;
+       padding: 15px;
+       border-radius: 5px;
+       font-size: 1.2rem;
+    }
+    
+}

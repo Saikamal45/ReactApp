@@ -22,3 +22,15 @@ img{
     height: 50vh;
     border-radius: 5PX;
 }
+
+@media (max-width:480px){
+    .outerContainer{
+        flex-direction: column;
+    }
+    h1{
+        font-size:1.1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}

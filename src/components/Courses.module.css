@@ -23,3 +23,27 @@ img{
     margin-top:150px;
     margin-right: 20px;
 }
+
+@media (max-width:480px){
+    .outer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .inner{
+      width: 100%;
+    }
+    .list{
+        display: block;
+        margin-left:0;
+        padding-left:0;
+    }
+    .list li{
+        font-size:1.3rem;
+    }
+    img{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}

@@ -44,4 +44,10 @@ label{
 .contact button:hover {
     background-color: #4cae4c;
   }
+
+  @media (max-width:480px){
+    .contact{
+        padding:20px;
+    }
+  }
   
