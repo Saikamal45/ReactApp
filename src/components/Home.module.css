@@ -22,6 +22,7 @@ html {
 .text{
    position:relative;
    top:0px;
+   z-index: 1;
 }
 
 img{
@@ -60,25 +61,35 @@ button:hover{
 }
 
 @media (max-width:480px){
-    .text {
+
+  .imageContainer{
+    flex-direction: column;
+    height: auto;
+  }
+     .text {
         max-width: 100%; /* Make text take full width on mobile */
         margin-bottom: 20px;
       }
     
-      img {
-        max-width: 100%; /* Make image take full width on mobile */
-      }
     .para1, .para2, .para3 {
         font-size: 2rem; /* Reduce text size for smaller screens */
       }
+
       .lor {
         font-size: 1.2rem; /* Adjust description text size */
       }
+
       button{
        width:100%;
        padding: 15px;
        border-radius: 5px;
        font-size: 1.2rem;
+    } 
+   
+    img {
+      width: 100%; /* Ensure image is responsive */
+      margin-top: 10px; /* Add a little margin above the image */
+      margin-bottom: 0; /* Remove bottom margin */
     }
-    
-}
+  
+  }
