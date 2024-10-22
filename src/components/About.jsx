@@ -15,7 +15,7 @@ export const About = () => {
    <h1>Our Vision</h1>
    <p>Our vision is to empower students to achieve excellence in their chosen IT careers by providing innovative learning solutions that bridge the gap between academic theory and industry requirements. We aim to produce graduates who are ready to tackle the challenges of tomorrow's tech world with confidence and creativity.</p>
    </div>
-   <img src='/images/Ex.jpg' alt='img not found'/>
+   <img src={`${process.env.PUBLIC_URL}/images/Ex.jpg`} alt='img not found'/>
     </div>
   )
 }

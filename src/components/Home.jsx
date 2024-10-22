@@ -18,7 +18,7 @@ export const Home = () => {
         <p className={styles.lor}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita deserunt voluptatem modi esse unde cumque, explicabo quidem fugiat maxime beatae. Nulla quas necessitatibus quibusdam est praesentium accusantium quisquam nisi debitis.</p>
         <button onClick={handleLearnMoreClick}>Learn more About Us</button>
         </div> 
-        <img src='/images/laptop.jpg' alt='img not found'/>
+        <img src={`${process.env.PUBLIC_URL}/images/laptop.jpg`} alt='img not found'/>
     </div>
   )
 }

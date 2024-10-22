@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
@@ -9,13 +9,15 @@ import { ContactUs } from './components/ContactUs';
 function App() {
   return (
     <div>
+      <Router>
      <Navbar/>
      <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route index element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/courses' element={<Courses/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
      </Routes>
+     </Router>
     </div>
   );
 }

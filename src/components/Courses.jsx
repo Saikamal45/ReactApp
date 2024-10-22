@@ -23,7 +23,7 @@ export const Courses = () => {
           <p>Learn automation testing tools like Selenium, JUnit, and TestNG to ensure high-quality software delivery with efficient test automation.</p>
         </ul>
       </div>
-      <img src='/images/pic2.jpg' alt='img not found'></img>
+      <img src={`${process.env.PUBLIC_URL}/images/pic2.jpg`} alt='img not found'></img>
     </div>
   )
 }
